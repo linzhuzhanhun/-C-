@@ -7,3 +7,123 @@ int main()
 	printf("hallo world\n");
 	return 0;
 }
+
+//第二节开始：
+#define _CRT_SECURE_NO_WARNINGS 1
+
+#include<stdio.h> 
+#include<string.h>
+
+
+int main()
+{
+    int input = 0;
+    printf("加入我们\n");
+    printf("加什么？加油吗？(1/0)>: ");
+    scanf("%d", &input);
+    if (input == 1)
+        printf("感谢支持\n");
+    else
+        printf("不来算了i(￣y▽,￣)╭\n ");
+    return 0;
+}
+第二节课：选择语句 可用
+
+int main()
+{
+	int line = 0;
+	int input = 0;
+	printf("加入我们\n");
+	printf("不加入我们\n,(1 / 0) > :");
+	scanf("%d", &input);
+	    if (input == 1)
+	        printf("感谢支持,请开始敲代码吧~~\n");
+	    else
+	        printf("不来算了i(￣y▽,￣)╭\n ");
+		while (line<200)
+		{
+			printf("敲一行代码;%d\n",line );
+			line++;
+		}
+		if (line = 200)
+			printf("好了，现在你已经进入了程序员的第一步了，这是一个值得纪念的活动！要好好犒劳一下自己哦~~i§(*￣▽￣*)§");
+	return 0;
+}
+第二节课：循环语句 While语句  可用
+
+int main()
+{
+	int arr[10] = {1,2,3,4,5,6,7,8,9,10};//定义一个存放10个整数数字的数组
+	char ch[20];
+	return 0;
+}
+第二节课：    数组的定义  可用
+
+int main()
+{
+	int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
+	         // 下标；0,1,2,3,4,5,6,7,8,9
+	int i = 0;
+	while (i<10)
+	{
+		printf("%d ", arr[i]);
+		i++;
+	}
+	return 0;
+}
+第二节课：    数组的定义   如何打印一组数组  可用
+
+int main()
+{
+	int a = 10;
+	int d = 3;
+	int c = a & d;
+	printf("%d\n", c);
+	return 0;
+	//第三节191：23，请转到观看
+	//或：一真即真，全假才假，与：一假即假，全真才真
+	//异或：对应的二进制位相同，则为0
+	//      对应的二进制位相异，则为1
+}
+第三节课 位操作符 可用
+
+int main()
+{
+	int a = 10;
+	a = a + 10;//等价于a+=10同一个意思，不同写法，同理-=也是
+	return 0;
+}
+第三节课 赋值操作符 可用
+
+int main()
+{
+	int a = 10;
+	int b = 20;
+	a + b;//双目操作符：有两个操作数，在这里为a与b
+	      //同理，也有单目操作符与三目操作符
+	return 0;
+}
+
+单目操作符：
+    ！   逻辑反操作符
+    -    负值
+    +    正值
+int main()
+{
+	//再c语言中我们表示真假
+	//0-假
+	//一切非零的数表示真
+	int a = -2;
+	int b = -a;
+	int c = +3;//正号都会省略
+	printf("%d\n", a);
+	printf("%d\n", !a);
+	return 0;
+}
+
+int main()
+{
+	int a = 10;
+	printf("%d\n", sizeof(a));//sizof计算的是变量/类型所占空间的大小，单位是字节
+	return 0;
+}
